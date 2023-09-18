@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <Title>What is the Blockchain</Title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="back-button" href="index.html">Back</a>
+        <a class="bitcoin-button" href="index.html">The Bitcoin Times</a>
+    </nav>
+
+    <!-- TradingView Widget BEGIN -->
+    <h2 style="margin-bottom: 50px; margin-top: 50px;">Bitcoin stock price</h2>
+    <div class="tradingview-widget-container" style="margin: 50px 100px 135px 100px; width: 85%; height: 65%;">
+        <div id="tradingview_8b860"></div>
+        <div class="tradingview-widget-copyright"><a
+                href="https://www.tradingview.com/symbols/BTCAUD/?exchange=FOREXCOM" rel="noopener"
+                target="_blank"><span class="blue-text">BTCAUD chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "autosize": true,
+                    "symbol": "FOREXCOM:BTCAUD",
+                    "interval": "W",
+                    "timezone": "Australia/Sydney",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_8b860"
+                }
+            );
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- TradingView Widget BEGIN -->
+    <h2>Ethereum stock price</h2>
+    <div class="tradingview-widget-container"
+        style="margin: 50px 100px 135px 100px; width: 85%; height: 65%; z-index: 0;">
+        <div id=" tradingview_a1bd3"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETHAUD/?exchange=KRAKEN"
+                rel="noopener" target="_blank"><span class="blue-text">ETHAUD chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "autosize": true,
+                    "symbol": "KRAKEN:ETHAUD",
+                    "interval": "W",
+                    "timezone": "Australia/Sydney",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_a1bd3"
+                }
+            );
+        </script>
+    </div>
+    <div margin="0px">
+        <p class="bottom">
+            <br>
+            copyright(2024)<br>
+            contact us at<br>
+            (02) 9438 4260<br>
+            oldenglishfishnchips.com.au<br>
+            2/286-288 Willoughby Rd, Naremburn NSW 2065<br>
+            <br>
+        </p>
+    </div>
+</body>
+
+</html>

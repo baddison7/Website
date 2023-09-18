@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <Title>What is the Blockchain</Title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="back-button" href="index.html">Back</a>
+        <a class="bitcoin-button" href="index.html">The Bitcoin Times</a>
+    </nav>
+    <div>
+        <h1> What is the blockchain </h1>
+        <h2>Table of Contents</h2>
+        <a href="#Meet-the-blockchain">
+            <h3>Meet the blockchain</h3>
+        </a>
+        <a href="#Securing-the-blockchain">
+            <h3>Securing the blockchain</h3>
+        </a>
+        <img src="Images/How-does-blockchain-work.jpg" alt="error" style="height: 50%; margin-bottom: 25px;">
+    </div>
+    <div>
+        <a id="Meet-the-blockchain">
+            <h2 style="margin: 50px; color: white; text-decoration: underline;">.</h2>
+        </a>
+        <h2 style="text-decoration: underline;">Meet the blockchain</h2>
+        <p>
+            The starting point for Bitcoin and other cryptocurrencies is the blockchain. It's become a buzzword, but the
+            short description is pretty drab. The blockchain contains an open ledger of all transactions that have ever
+            taken place on a given cryptocurrency network. Did you send money to Uncle Theo, paying him for a graphics
+            card? It's in the blockchain, for everyone to see. So, when your friend comes by claiming you never paid him
+            back for the concert tickets, or the fast-food stop, or whatever, you can find incontrovertible proof - one
+            way or the other. That might sound interesting, but it probably sounds alarming, too. Why would you want
+            everyone to be able to check on what amounts to your digital bank account? That's where the second part of
+            the blockchain comes into play: All transactions are at least somewhat anonymous. Unless you publicly list
+            your Bitcoin wallet address - and it's trivial to create more addresses, so you can have more than one -
+            determining what money belongs to whom is difficult. It's not impossible, especially with enough time,
+            effort, and use of a specific wallet, but there are ways to obfuscate your transactions and keep them veiled
+            from prying eyes. The more important aspect of the blockchain isn't just that it keeps a record of all
+            transactions. The critical factor is that it's backed by strong cryptography - SHA256, in the case of
+            Bitcoin, and dozens of other cryptographic algorithms for other coins. A lot of complex math goes into the
+            creation of a good cryptographic algorithm, with the end goal being that the only way to crack it would be
+            brute force. SHA256 has a 256-bit cypher length, so breaking the encryption for a single message would
+            involve finding the one number out of a 2256 number space that's correct. If that doesn't seem like a big
+            deal, let's put it differently: 2256 is the same as 1.158×1077, or in other words, it's a 1 followed by 77
+            zeroes. Our solar system has roughly 1.2X1056 atoms, the Milky Way galaxy has approximately 2.4×1067 atoms,
+            and depending on whose math you want to use, the entire universe has anywhere from 1078-1082 atoms. That
+            means a 256-bit number space is large enough that you can easily assign a unique number to every atom in the
+            galaxy, with room to spare. We're simplifying quite a bit, but the main point is that cracking the
+            cryptography behind Bitcoin would be extremely difficult, and other coins use even stronger cryptography.
+            Bitcoin and other cryptocurrencies also use cryptography for the unique user wallet addresses. In the case
+            of Bitcoin, there are currently a potential 2160 addresses, or around a quindecillion. No, we didn't just
+            make that word up. That's a one with 48 zeroes after it. Or if you prefer, it's 1 trillion × 1 trillion × 1
+            trillion × 1 trillion. We're not likely to run out of wallet addresses anytime soon. All of this
+            cryptography plays a pivotal role in cryptocurrencies, as you might guess considering the name. They're
+            "currencies" - perhaps digital commodities would be a better name, but that ship has sailed - backed by
+            cryptography. And when we say cryptography, what we mean is complex math, the sort of thing to make even
+            your calculus teacher squinch up their face. So-called "fiat" currencies, such as the US dollar, are backed
+            by trust in the government and banking institutions. Bitcoin and Ethereum are backed by our trust in math.
+            Actually, they're backed by math plus all of the people willing to participate in securing the
+            cryptocurrency network, which brings us to the next topic.
+        </p>
+        <img src="Images/960x0.jpg" alt="error" style="width: 50%; margin-top: 50px; margin-bottom: 25px;">
+        <!-- <a id="Securing-the-blockchain">
+            <h2 style="color: white;">Securing the blockchain</h2>
+        </a> -->
+        <a id="Securing-the-blockchain">
+            <h2>Securing the blockchain</h2>
+        </a>
+        <p>
+            We've talked about cryptography, but what exactly makes this whole blockchain thing secure? Cryptocurrencies
+            run as a large distributed network of computing resources, with the various nodes communicating with each
+            other. Every time someone wants to move coins - or really, a portion of a coin, with most cryptocurrencies
+            able to deal with amounts to eight decimal places - they send a transaction out on to the network and it
+            becomes available for inclusion in the next block. Each block encapsulates all of the transactions since the
+            previous block into one chunk, creates a digital hash signature of the block, and the entire thing gets
+            submitted as a new addition to the blockchain.
+            Here's where things get interesting. You can't just add a new block to the network any time you want. That
+            block needs to satisfv certain requirements. In short, you need to find a solution to a mathematical
+            function defined by the coin algorithm.
+            The function uses the results of the previous block as input, going back in a chain to the original genesis
+            block. This means no one can get a head start by trying to solve for future blocks until the current block
+            has been "solved." The algorithms are also designed such that the solutions are effectively random, selected
+            from the entire number space for the cryptography key. There can be a huge number of acceptable solutions,
+            and your hardware just needs to find one of these.
+            When a system does find a solution, it gets to pick which transactions get included in that block (ideally,
+            all of them, but more on that in a moment), wraps them all up with a tidy bow, calculates a digital
+            signature, and submits that to the network. Other nodes on the network can then verify the solution and
+            accept or reject it. Each potential solution has a timestamp, and the network has various criteria to help
+            determine which block was found first. Eventually, the network reaches a consensus among enough nodes
+        </p>
+    </div>
+    <div>
+        <img src="" alt="">
+    </div>
+    <div margin="0px">
+        <p class="bottom">
+            <br>
+            copyright(2024)<br>
+            contact us at<br>
+            (02) 9438 4260<br>
+            oldenglishfishnchips.com.au<br>
+            2/286-288 Willoughby Rd, Naremburn NSW 2065<br>
+            <br>
+        </p>
+    </div>
+</body>
+
+</html>
